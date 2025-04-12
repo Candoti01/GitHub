@@ -1,42 +1,102 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: black;
 }
+
 #calculadora {
-    border: solid black;
+    color: white;
+    border: solid rgb(92, 92, 92);
     border-radius: 30px;
-    background-color: burlywood;
+    background-color: rgb(61, 54, 44);
     margin: 10%;
+    margin-bottom: 0;
     padding: 50px;
     display: grid;
     grid-template-columns: auto auto;
+    justify-content: center;
 }
+#divmesano{
+    display: flex;
+    
+}
+#mes-ano{
+    width: 25%;
+}
+#periodo {
+    border-right: none;
+}
+
 select {
     width: 50%;
-    border: solid black;
-    border-radius: 20px;
+    border: solid rgb(92, 92, 92);;
+    border-radius: 5px;
 }
 input {
-    border: solid black;
-    border-radius: 30px;
+    border: solid rgb(92, 92, 92);;
+    border-radius: 5px;
+    width: 60%;
 }
-#botao{
+
+#botao {
     color: white;
-    background-color: rgb(139, 77, 6);
+    background-color: rgb(80, 71, 59);
     width: 50%;
     padding: 10px;
     margin-top: 30px;
     border-radius: 30px;
-    border: solid black;
+    border: solid rgb(92, 92, 92);;
 }
+
 #botao:hover {
-    background-color: rgb(179, 97, 5);
+    transition: 0.5s;
+    background-color: rgb(9, 255, 0);
     cursor: pointer;
 }
-#resultado-final{
+
+#resultado-final {
     background-color: white;
-    border-radius: 15px;
-    border: solid black;
+    border-radius: 5px;
+    border: solid rgb(92, 92, 92);;
     height: 50%;
     width: 50%;
+}
+
+#tablesec {
+    padding: 10px;
+}
+
+#table {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border: solid rgb(92, 92, 92);;
+    border-collapse: collapse;
+    width: 30%;
+}
+
+tr,
+td {
+    padding: 10px;
+    border: 1px solid rgb(92, 92, 92);;
+    height: 30px;
+    color: white;
+
+}
+
+.tb-direito {
+    text-align: right;
+
+}
+
+thead {
+    background-color: rgb(61, 54, 44);
+}
+
+tbody {
+    background-color: rgb(80, 71, 59);
 }

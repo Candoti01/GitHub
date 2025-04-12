@@ -15,65 +15,77 @@
 <body>
     <main>
         <section id="calculadora">
+
             <div class="campos" id="campo-valor">
                 <h3>
                     Valor inicial:
                 </h3>
-                <input type="number" id="valor_inicial">
+                <input type="number" id="valor-inicial">
             </div>
+
             <div class="campo" id="campo-invmen">
                 <h3>
                     Investimento mensal:
                 </h3>
                 <input type="number" id="inv-mensal">
             </div>
+
             <div class="campo" id="campo-juros.a">
                 <h3>
                     Juros (a.a) %:
                 </h3>
-                <input type="number" id="juros-a.a">
+                <input type="number" id="juros-aa">
             </div>
-            <div class="campo" id="campo-qntmeses">
+
+            <!-- <div class="campo" id="campo-qntmeses">
                 <h3>
                     Quantidade de meses:
                 </h3>
                 <input type="number" id="qnt-meses">
-            </div>
+            </div> -->
+
             <div class="campo" id="campo-mesini">
                 <h3>
                     Mes inicial:
                 </h3>
-                <select>
-                    <option value="janeiro">Janeiro</option>
-                    <option value="fevereiro">Fevereiro</option>
-                    <option value="marco">Março</option>
-                    <option value="abril">Abril</option>
-                    <option value="maio">Maio</option>
-                    <option value="junho">Junho</option>
-                    <option value="julho">Julho</option>
-                    <option value="agosto">Agosto</option>
-                    <option value="setembro">Setembro</option>
-                    <option value="outrubro">Outubro</option>
-                    <option value="novembro">Novembro</option>
-                    <option value="dezembro">Dezembro</option>
+                <select id="mes-ini">
+                    <option value="1">Janeiro</option>
+                    <option value="2">Fevereiro</option>
+                    <option value="3">Março</option>
+                    <option value="4">Abril</option>
+                    <option value="5">Maio</option>
+                    <option value="6">Junho</option>
+                    <option value="7">Julho</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Setembro</option>
+                    <option value="10">Outubro</option>
+                    <option value="11">Novembro</option>
+                    <option value="12">Dezembro</option>
                 </select>
             </div>
+
             <div class="campo" id="campo-anoini">
                 <h3>
-                    Ano inicial:
+                    Periodo:
                 </h3>
-                <input type="number" id="ano-ini">
+                <div id="divmesano">
+                    <input id="periodo" type="number">
+                    <select  id="mes-ano">
+                        <option value="1">Mes</option>
+                        <option value="2">Ano</option>
+                    </select>
+                </div>
             </div>
-            <div class="campo" id="botao">
+
+            <div class="campo" id="botao" onclick="calcularJuros()">
                 <h1>Calcular</h1>
             </div>
-            <div class="campo" id="resultado">
-                <h3>
-                    Valor Final:
-                </h3>
-                <div id="resultado-final">
-
-                </div>
+            
+        </section>
+        <section id="tablesec">
+            <div id="table">
+                <table id="tabela">
+                </table>
             </div>
         </section>
         <script src="index.js"></script>
